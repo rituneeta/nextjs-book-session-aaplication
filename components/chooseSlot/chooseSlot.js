@@ -35,10 +35,10 @@ const ChooseSlot = () => {
     }).then((res) => {
       setShowLoader(false)
       if (!res.ok) throw new Error("Failed to send message");
-      NotificationManager.success("Succesfully Book the Meeting Room !", "BookMeeting", 2000);
+        NotificationManager.success("Succesfully Book a Session !", "BookMeeting", 2000);
     }).catch(error => {
       setShowLoader(false)
-      NotificationManager.error("Error to Book the Meeting Room ", "BookMeeting");
+      NotificationManager.error("Error to Book a Session ", "BookMeeting");
     })
   };
 
